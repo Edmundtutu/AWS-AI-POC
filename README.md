@@ -16,7 +16,7 @@ This project is a demonstration of how to integrate AWS S3 storage into a Larave
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/your-username/laravel-aws-s3-demo.git
+    git clone https://github.com/Edmundtutu/AWS-AI-POC.git
     cd laravel-aws-s3-demo
     ```
 
