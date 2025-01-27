@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\S3Controller;
+use App\Http\Controllers\ChatController;
 use Illuminate\Http\Request;
 
 /*
@@ -22,4 +23,8 @@ Route::get('/files', [S3Controller::class, 'index'])->name('files.index');
 Route::get('/upload', [S3Controller::class, 'showUploadForm'])->name('upload.show');
 Route::post('/upload', [S3Controller::class, 'upload'])->name('upload.store');
 Route::get('/download/{filename}', [S3Controller::class, 'download'])->name('download');
-Route::delete('/files/{filename}', [S3Controller::class, 'destroy'])->name('files.destroy'); 
+Route::delete('/files/{filename}', [S3Controller::class, 'destroy'])->name('files.destroy');
+
+// Chat routes
+Route::get('/chat', [ChatController::class, 'show'])->name('chat.show');
+Route::post('/chat/send', [ChatController::class, 'sendMessage'])->name('chat.send'); 

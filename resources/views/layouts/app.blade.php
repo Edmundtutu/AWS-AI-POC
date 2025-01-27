@@ -12,7 +12,8 @@
     <link href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
-
+    <!-- Highlight.js CSS for code highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -32,6 +33,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('files.index') }}">
                             <i class="fas fa-list"></i> View Files
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('chat.show') }}">
+                            <i class="fas fa-robot"></i> Chat Bot
                         </a>
                     </li>
                 </ul>
@@ -55,6 +61,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Dropzone JS -->
     <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+    <!-- Marked JS for markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Highlight.js for code highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
     <!-- Custom JS -->
     <script src="{{ asset('js/dropzone-config.js') }}"></script>
     @stack('scripts')
