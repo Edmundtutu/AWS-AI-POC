@@ -1,0 +1,41 @@
+/* Navigation Styles */
+.navbar-brand {
+    font-weight: bold;
+}
+.nav-link {
+    color: rgba(255,255,255,.8) !important;
+}
+.nav-link:hover {
+    color: white !important;
+}
+
+/* Layout Styles */
+.main-content {
+    min-height: calc(100vh - 160px);
+}
+.footer {
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Dropzone Styles */
+.dropzone {
+    border: 2px dashed #7fc1f7;
+    border-radius: 5px;
+    background: white;
+}
+.dropzone .dz-message {
+    font-weight: 400;
+}
+.dropzone .dz-message .note {
+    font-size: 0.8em;
+    font-weight: 200;
+    display: block;
+    margin-top: 1.4rem;
+}
+
+/* File List Styles */
+.file-list-table .btn {
+    margin-left: 0.5rem;
+} 
